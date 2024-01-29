@@ -1,13 +1,438 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  </body>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./fonts/stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <title>Sytasco</title>
+</head>
+
+<body>
+
+
+  <!-- Nav -->
+  <nav class="navbar navbar-expand-lg navbar-light  syt-nav-bar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="Images/logo.jpg" class="syt-logo" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about-us.html">About Us</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="it-service.html">IT Solutions</a></li>
+              <li><a class="dropdown-item" href="training.html">Training & Internship</a></li>
+              <li><a class="dropdown-item" href="outsouring.html">Out Sourcing</a></li>
+              
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="training.html">Training & Internship</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="outsouring.html">Out Sourcing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact-us.html">Contact Us</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <section>
+    <div class="lm-hero-image">
+      <div>
+        <img src="./Images/Hero_banner.jpg" class="img-fluid w-100" alt="hero-banner">
+      </div>
+      <div class="lm-hero-image-text">
+        <h3>Explore, Invest, Build : <span>Sytasco</span> Does it All </h3>
+        <p>Your hub for Sytasco exploration, property investment, and construction projects. Contact us to bring your
+          property goals to life. </p>
+        <div class="multi-buttons">
+          <a href="about-us.html" class="btn syt-primary-btn">Learn More</a>
+          <a href="" class="btn syt-secondary-btn">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Services -->
+   
+  <section class="section-block">
+    <div class="container">
+      <div id="cards_landscape_wrap-2">
+        <div class="row">
+          <div class="col-sm-12 col-md-3 col-lg-3">
+              <h3 class="lm-headings">Our Diverse <span class="heading-highlight">Services</span>  Offering</h3>
+              <div>
+                <p>Explore our range of services tailored to meet your needs. From consultancy to implementation, 
+                  our diverse suite of services is designed to empower your business at every stage of its growth.</p>
+                <a class="btn syt-primary-btn">Learn More</a>
+              </div>
+          </div>
+          <div class="col-sm-12 col-md-3 col-lg-3">
+            <a href="it-service.html">
+                <div class="card-flyer">
+                    <div class="text-box">
+                        <div class="image-box">
+                            <img src="Images/service_1.jpg" class="img-fluid" alt="service_1" />
+                        </div>
+                        <div class="text-container">                                    
+                            <h6>IT Solutions</h6>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        </div>
+                       <div >
+                        <a href="it-service.html" class="btn syt-tertiary-btn mb-3">Learn More</a>
+                       </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-3">
+            <a href="training.html">
+                <div class="card-flyer">
+                    <div class="text-box">
+                        <div class="image-box">
+                            <img src="Images/service_2.jpg" class="img-fluid" alt="service_2"  />
+                        </div>
+
+                        <div class="text-container">
+                            <h6>Training & Internship</h6>
+                           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        </div>
+                        <div >
+                          <a href="training.html" class="btn syt-tertiary-btn mb-3">Learn More</a>
+                         </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-3">
+            <a href="outsouring.html">
+                <div class="card-flyer">
+                    <div class="text-box">
+                        <div class="image-box">
+                            <img src="Images/service_3.jpg" class="img-fluid" alt="service_3"  />
+                        </div>
+                        <div class="text-container">
+                            <h6>Out Souring</h6>
+                           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        </div>
+                        <div >
+                          <a href="outsouring.html" class="btn syt-tertiary-btn mb-3">Learn More</a>
+                         </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="clearfix"></div>
+
+  <!-- Client Adoration -->
+
+  <section class="section-bg">
+  
+    <div class="section-padding">
+       <div class="container">
+          <div class="syt-center-heading">
+            <h3 class="lm-headings-center heading-highlight">Client Adoration</h3>
+            <p>90% of clients choose us for their next engagement. Trust Excellence.</p>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <p class="client-number">
+                 <span class="syt-large-text">125</span> <span class="syt-bold-text">Happy Customers  
+                </p></span>
+                <p class="client-content">We collaborate across all business phases and software development. From startups to large enterprises, 
+                  we optimize and expand, transcending industries. Sytasco's bespoke application development elevates
+                   user experience, propelling business growth through strategic partnerships and custom digital solutions.</p>
+                   <a class="btn syt-primary-btn">Learn More</a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <img src="Images/about_us.png" class="img-fluid" alt="about us image">
+            </div>
+          </div>
+       </div>
+    </div>
+  </section>
+
+  <!-- Counter -->
+
+  <section>
+  
+<div class="count-area" data-diff="100">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="count-area-content">
+                    <div class="count-icon">  <i class="fa fa-home counter-icon"></i></div>
+                    <div class="count-digit">9</div>
+                    <div class="count-title"> Count Title </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="count-area-content">
+                    <div class="count-icon">  <i class="fa fa-graduation-cap counter-icon"></i></div>
+                    <div class="count-digit">80</div>
+                    <div class="count-title">  Count Title</div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="count-area-content">
+                    <div class="count-icon">  <i class="fa fa-user counter-icon"></i></div>
+                    <div class="count-digit">742</div>
+                    <div class="count-title">  Count Title </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="count-area-content">
+                    <div class="count-icon">  <i class="fa fa-book counter-icon"></i></div>
+                    <div class="count-digit">1200</div>
+                    <div class="count-title"> Count Title </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+ 
+  </section>
+
+
+ <!-- Team -->
+
+ <section class="section-block">
+   <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-3 col-lg-3">
+        <h3 class="lm-headings">Meet Our Exceptional<span class="heading-highlight"> Team</span></h3>
+        <div>
+          <p>At Sytasco, our team embodies expertise, passion, and dedication. Committed to excellence, 
+            our diverse talents converge to drive innovation and deliver exceptional solutions.</p>
+          <a class="btn syt-primary-btn">Learn More</a>
+        </div>
+    </div>
+      <div class="col-sm-12 col-md-3 col-lg-3">
+        <article class="card">
+            <header class="card__thumb">
+                <a href="#"><img src="./Images/team-1.jpg"/></a>
+            </header>
+            
+            <div class="card__body">
+                <div class="card__category"><a href="#">CEO</a></div>
+                <h2 class="card__title"><a href="#">Prem</a></h2>
+                <div class="card__subtitle">As our visionary leader..</div>
+                
+                <p class="card__description">
+                
+                    <a href="#" class="btn syt-tertiary-btn">Learn More</a>
+                
+                </p>
+            </div>
+      
+        </article>
+    </div>
+    <div class="col-sm-12 col-md-3 col-lg-3">
+      <article class="card">
+          <header class="card__thumb">
+              <a href="#"><img src="./Images/team-1.jpg"/></a>
+          </header>
+          
+          <div class="card__body">
+              <div class="card__category"><a href="#">Developer</a></div>
+              <h2 class="card__title"><a href="#">Ram</a></h2>
+              <div class="card__subtitle">As our visionary leader..</div>
+              
+              <p class="card__description">
+              
+                  <a href="#" class="btn syt-tertiary-btn">Learn More</a>
+                 
+              </p>
+          </div>
+    
+      </article>
+  </div>
+  <div class="col-sm-12 col-md-3 col-lg-3">
+    <article class="card">
+        <header class="card__thumb">
+            <a href="#"><img src="./Images/team-1.jpg"/></a>
+        </header>
+        
+        <div class="card__body">
+            <div class="card__category"><a href="#">Tester</a></div>
+            <h2 class="card__title"><a href="#">Kumar</a></h2>
+            <div class="card__subtitle">As our visionary leader..</div>
+            
+            <p class="card__description">
+              <a href="#" class="btn syt-tertiary-btn">Learn More</a>
+            </p>
+        </div>
+  
+    </article>
+</div>
+     </div>
+   </div>
+ </section>
+
+ <!-- Call Back -->
+
+ <section>
+  <div>
+     <div class="syt-call-back">
+        <div class="container">
+            <div class="row section-split">
+                <div class="col-sm-12 col-md-9 col-lg-9">
+                 <h3>Unlock Your Business Potential Today ?</h3>
+                 <p> Ready to transform your business with cutting-edge IT solutions? Let's embark on this journey together. 
+                  Contact us today to explore how our expertise in seamless integration, SAP optimization, 
+                  and innovative mobile solutions can propel your business to new heights. Transform possibilities
+                  into reality – click below to get started.</p>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 syt-flex-end">
+                  <a href="#" class="btn syt-secondary-btn">Get a call back</a>
+                </div>
+            </div>
+        </div>
+     </div>
+  </div>
+ </section>
+
+  <!-- partners -->
+
+ <section>
+    <div class="section-block">
+      <div class="container">
+        <div class="syt-center-heading">
+          <h3 class="lm-headings-center heading-highlight">Trusted Collaborations - Our Partners</h3>
+          <p>Partnerships driving synergy, growth, and impactful solutions define our success.</p>
+        </div>
+         <section class="customer-logos slider">
+            <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+           
+         </section>
+      </div>
+    </div>
+ </section>
+
+
+ <!-- Footer -->
+
+ <footer class="footer-bg">
+    <div class="section-padding">
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-4">
+                <div class="footer-heading">
+                  <h3>About Us </h3>
+                  <div>
+                    <img src="./Images/white-logo.png" class="img-fluid" alt="logo">
+                    <p class="footer-content">Sytasco, dedicated to innovation and partnership, has been transforming industries since 2023. Our commitment to excellence drives us to craft bespoke solutions, 
+                     ensuring sustainable growth and impactful success for our clients.</p>
+                 </div>
+               </div>
+                  
+              </div>
+              <div class="col-lg-4">
+             
+                <div class="footer-heading">
+                  <h3>CONTACT INFO </h3>
+                  <ul class="footer-contact-list">
+
+                    <li>
+                      <i class="fa-solid fa-envelope"></i>
+                      <span> Mail :</span>
+                      <a href=""> info@Sytasco.in</a>
+                    </li>
+
+                    <li>
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span>US Address:</span>
+                      <a href=""> 16514 nw 3rd st, Pembroke pines, FL 33028.
+                        <br>
+                        <br>
+                        Phone:+1 (954) 498-9151
+                      </a>
+                    </li>
+
+                  </ul>
+               </div>
+              </div>
+              <div class="col-lg-4">
+             
+                <div class="footer-heading">
+                  <h3>CONTACT INFO </h3>
+                  <ul class="footer-list">
+                    <li> <a href="index.html">Home</a> </li>
+                    <li> <a href="about-us.html">About</a> </li>
+                    <li> <a href="services.html">Services</a> </li>
+                    <li><a href="contact.html">Contact</a></li>
+                 </ul>
+               </div>
+              </div>
+              
+          </div>
+        </div>
+    </div>
+ </footer>
+ <div class="lm-copy-right">
+  <p>© <span>Sytasco</span> PROJECTS 2023. ALL RIGHTS RESERVED.</p>
+</div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+   
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./JS/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.8/countUp.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+</body>
+
 </html>
