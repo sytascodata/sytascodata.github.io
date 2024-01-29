@@ -27,7 +27,7 @@
 }
 .lm-hero-image-text {
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 6%;
     width: 37%;
     text-align: center;
@@ -35,7 +35,7 @@
 
 .lm-hero-image-text h3 {
  color: #fff;
- font-size: 45px;
+ font-size: 35px;
 }
 .lm-hero-image-text h3 span{
     color: #00d1fa;
