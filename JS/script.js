@@ -58,3 +58,7 @@ $(document).ready(function(){
     });
 });
     
+
+// $(document).ready(function(){
+//   $('.nav-link').not('.active').removeClass('active');
+// });
