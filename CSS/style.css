@@ -110,13 +110,24 @@
   line-height: 35px !important;
   border: 1px solid #042e4d !important;
 }
-.navbar-light .navbar-nav .nav-link.active{
+.navbar-light .navbar-nav .nav-link {
+  color: #262626 !important;
+  font-size: 17px !important;
+  font-weight: 400 !important;
+}
+
+.nav-link-transition {
+  transition: color 0.3s ease; /* You can adjust the duration and easing here */
+}
+
+.navbar-light .navbar-nav .nav-link.active {
   color: #003e6d !important;
   font-family: 'Nunito';
   font-weight: bold !important;
   position: relative;
 }
-.navbar-light .navbar-nav .nav-link.active:after{
+
+/* .navbar-light .navbar-nav .nav-link.active:after {
   content: "";
   position: absolute;
   bottom: -8px;
@@ -124,12 +135,9 @@
   width: 100%;
   height: 2px;
   background-color: #003e6d;
-}
-.navbar-light .navbar-nav .nav-link {
-    color: #262626 !important;
-    font-size: 17px !important;
-    font-weight: 400 !important;
-}
+} */
+
+
 
 /*----  Card Style  ----*/
 
@@ -921,7 +929,7 @@ margin-bottom: 10px;
 }
 .navbar-light .navbar-nav .nav-link.active:after{
  
-  bottom: 0cap;
+  bottom: 0px;
   width: 50%;
   
 }
@@ -934,3 +942,7 @@ margin-bottom: 10px;
 .banner-mobile .lm-hero-image-text .inner-banner{
   font-size: 40px;
 }
+
+
+
+
